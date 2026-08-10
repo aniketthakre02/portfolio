@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap");
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------
+   Design tokens
+   Single source of truth for the palette/type from the design
+   mockup. Components reference these instead of hardcoding colors,
+   so a future re-theme only touches this file.
+---------------------------------------------------------------- */
+:root {
+  --color-bg: #0a0a0c;
+  --color-bg-2: #0e0e11;
+  --color-card: #131317;
+  --color-border: #232328;
+
+  --color-text: #f4f3ef;
+  --color-text-dim: #98978f;
+  --color-text-mute: #5f5e59;
+
+  --color-accent: #8b80f5;
+  --color-accent-dim: #5b52a8;
+  --color-green: #34d399;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-accent: "Instrument Serif", serif;
+}
+
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-bg-2: var(--color-bg-2);
+  --color-card: var(--color-card);
+  --color-border: var(--color-border);
+  --color-text: var(--color-text);
+  --color-text-dim: var(--color-text-dim);
+  --color-text-mute: var(--color-text-mute);
+  --color-accent: var(--color-accent);
+  --color-accent-dim: var(--color-accent-dim);
+  --color-green: var(--color-green);
+  --font-display: var(--font-display);
+  --font-accent: var(--font-accent);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-accent-dim);
+  color: var(--color-text);
+}
