@@ -1,8 +1,12 @@
+import Navbar from "./components/layout/Navbar"
+
 function App() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-bg text-text">
-      <p className="text-text-dim">Portfolio scaffold is wired up. Sections come next.</p>
+    <>
+    <Navbar/>
+    <main className="min-h-screen bg-bg text-text">
     </main>
+    </>
   )
 }
 
