@@ -3,6 +3,7 @@ import Hero from "./features/hero/Hero"
 import About from "./features/about/About"
 import Experience from "./features/experience/Experience"
 import Skills from "./features/skills/Skills"
+import Projects from "./features/projects/Projects"
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <About/>
       <Experience/>
       <Skills/>
+      <Projects/>
     </main>
     </>
   )
