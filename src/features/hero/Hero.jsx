@@ -45,7 +45,7 @@ function Hero() {
                 <img
                     src={avatar}
                     alt="Aniket Thakre"
-                    className="h-13 w-13 rounded-full border border-border object-cover"
+                    className="h-15 w-15 rounded-full border border-border object-cover"
                 />
                 <span>a Software Engineer</span>
             </div>
