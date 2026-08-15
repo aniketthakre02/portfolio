@@ -1,10 +1,12 @@
 import { useScrollSpy } from '../../hooks/useScrollSpy'
 
 const NAV_LINKS = [
-    { label: 'Home', href: '#home', id: 'home' },
-    { label: 'About', href: '#about', id: 'about' },
-    { label: 'Work', href: '#work', id: 'work' },
-    { label: 'Skills', href: '#skills', id: 'skills' },
+  { label: 'Home', href: '#home', id: 'home' },
+  { label: 'About', href: '#about', id: 'about' },
+  { label: 'Work', href: '#work', id: 'work' },
+  { label: 'Skills', href: '#skills', id: 'skills' },
+  { label: 'Projects', href: '#projects', id: 'projects' },
+  { label: 'Certificates', href: '#certificates', id: 'certificates' },
 ]
 
 const SECTION_IDS = NAV_LINKS.map((link) => link.id)
