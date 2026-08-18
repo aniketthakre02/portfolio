@@ -7,7 +7,6 @@ function Experience() {
                 June 2023 — Present
                 <span className="h-px flex-1 bg-border" />
             </p>
-
             <h2 className="mb-16 text-4xl font-medium md:text-5xl">
                 Professional{' '}
                 <span className="font-accent text-5xl italic md:text-6xl">
