@@ -51,7 +51,7 @@ function Hero() {
             </div>
 
             {/* CTAs */}
-            <div className="relative mt-14 flex items-center gap-4">
+            <div className="relative mt-14 flex flex-col items-center gap-4 sm:flex-row">
                 <a
                     href="#contact"
                     className="flex items-center gap-3 rounded-full bg-text py-2 pl-6 pr-2 font-medium text-bg transition hover:bg-white/90"
