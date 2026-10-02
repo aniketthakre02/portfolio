@@ -9,6 +9,7 @@ const CONNECT_LINKS = [
   { label: 'GitHub', href: 'https://github.com/aniketthakre02' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/aniket-thakre21/' }, 
   { label: 'Email', href: 'mailto:aniketthakre2005@gmail.com' },
+  { label: 'LeetCode', href: 'https://leetcode.com/u/aniketthakre2005' }
 ]
 
 function Footer() {
