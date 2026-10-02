@@ -28,17 +28,17 @@ function Navbar() {
           <a
             key={link.href}
             href={link.href}
-            className={`rounded-full px-4 py-2 text-sm transition-colors duration-200 ${
-              activeId === link.id
+            className={`rounded-full px-4 py-2 text-sm transition-colors duration-200 ${activeId === link.id
                 ? 'bg-text text-bg'
                 : 'text-text-dim hover:bg-white/5 hover:text-text'
-            }`}
+              }`}
           >
             {link.label}
           </a>
         ))}
         <a
-          href="#contact"
+          href="/resume.pdf"
+          download="Aniket_Thakre_Resume.pdf"
           className="ml-1 rounded-full bg-text px-5 py-2 text-sm font-medium text-bg transition hover:bg-white/90"
         >
           Resume
@@ -54,47 +54,42 @@ function Navbar() {
       >
         <span className="relative flex h-4 w-5 flex-col justify-between">
           <span
-            className={`h-px w-full bg-text transition-transform duration-300 ${
-              isOpen ? 'translate-y-[7px] rotate-45' : ''
-            }`}
+            className={`h-px w-full bg-text transition-transform duration-300 ${isOpen ? 'translate-y-[7px] rotate-45' : ''
+              }`}
           />
           <span
-            className={`h-px w-full bg-text transition-opacity duration-300 ${
-              isOpen ? 'opacity-0' : ''
-            }`}
+            className={`h-px w-full bg-text transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''
+              }`}
           />
           <span
-            className={`h-px w-full bg-text transition-transform duration-300 ${
-              isOpen ? '-translate-y-[7px] -rotate-45' : ''
-            }`}
+            className={`h-px w-full bg-text transition-transform duration-300 ${isOpen ? '-translate-y-[7px] -rotate-45' : ''
+              }`}
           />
         </span>
       </button>
 
       {/* Fullscreen mobile menu overlay */}
       <div
-        className={`fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-bg/98 backdrop-blur-md transition-opacity duration-300 md:hidden ${
-          isOpen ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'
-        }`}
+        className={`fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 bg-bg/98 backdrop-blur-md transition-opacity duration-300 md:hidden ${isOpen ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0'
+          }`}
       >
         {NAV_LINKS.map((link) => (
           <a
             key={link.href}
             href={link.href}
             onClick={() => setIsOpen(false)}
-            className={`text-2xl font-medium transition ${
-              activeId === link.id ? 'text-accent' : 'text-text-dim'
-            }`}
+            className={`text-2xl font-medium transition ${activeId === link.id ? 'text-accent' : 'text-text-dim'
+              }`}
           >
             {link.label}
           </a>
         ))}
         <a
-          href="#contact"
-          onClick={() => setIsOpen(false)}
-          className="mt-4 rounded-full bg-text px-8 py-3 text-lg font-medium text-bg"
+          href="/resume.pdf"
+          download="Aniket_Thakre_Resume.pdf"
+          className="ml-1 rounded-full bg-text px-5 py-2 text-sm font-medium text-bg transition hover:bg-white/90"
         >
-          Resume
+          RESUME
         </a>
       </div>
     </header>

@@ -1,4 +1,5 @@
 import { featuredProjects, moreProjects } from '../../data/projects'
+import HealthCareDashboard from '../../assets/projects/HealthCareDashboard.png'
 
 function Projects() {
   return (
@@ -19,10 +20,25 @@ function Projects() {
       <div className="space-y-24">
         {featuredProjects.map((project) => (
           <div key={project.id} className="grid items-center gap-12 md:grid-cols-2">
-            <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl border border-border bg-card">
-              <span className="font-accent text-2xl italic text-text-mute">
-                project preview
-              </span>
+            <div className="overflow-hidden rounded-2xl border border-border bg-card">
+              <div className="flex items-center gap-2 border-b border-border bg-white/[0.03] px-4 py-3">
+                <div className="flex gap-1.5">
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f56]" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]" />
+                </div>
+                <span className="ml-2 truncate rounded-md bg-white/[0.05] px-3 py-1 text-xs text-text-mute">
+                  healthcare-services-frontend.vercel.app
+                </span>
+              </div>
+
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={HealthCareDashboard}
+                  alt="Healthcare Service Management System admin dashboard"
+                  className="h-full w-full object-cover object-top"
+                />
+              </div>
             </div>
 
             <div>
@@ -111,7 +127,6 @@ function Projects() {
               </div>
 
               <h3 className="mb-3 text-xl font-medium">{project.title}</h3>
-
               <p className="mb-6 flex-1 text-text-dim">{project.description}</p>
 
               <div className="mb-6 flex flex-wrap gap-2">
