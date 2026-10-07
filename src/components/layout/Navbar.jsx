@@ -89,7 +89,7 @@ function Navbar() {
           download="Aniket_Thakre_Resume.pdf"
           className="ml-1 rounded-full bg-text px-5 py-2 text-sm font-medium text-bg transition hover:bg-white/90"
         >
-          RESUME
+          Resume
         </a>
       </div>
     </header>
