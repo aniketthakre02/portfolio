@@ -45,21 +45,20 @@ function About() {
         </h2>
 
         <p className="mb-6 text-lg leading-relaxed text-text-dim">
-          I'm a Software Engineer at TCS, where I work on Genisys — an
-          enterprise insurance configurator — building out the Accounts
-          module. I care most about the parts of software people don't see:
-          clean data models, predictable APIs, and systems that hold up
-          under real usage.
+          I'm a Software Engineer at TCS, building enterprise-level software
+          for large-scale, real-world use. I care most about the parts of
+          software people don't see: clean data models, predictable APIs,
+          and systems that hold up under real usage.
         </p>
 
         <p className="mb-6 text-lg leading-relaxed text-text-dim">
-          Outside of work, I build full-stack projects end to end —
-          architecture, deployment, and all — and spend time on data
-          structures and algorithms, because I like understanding why
-          something works, not just that it does.
+          I take ownership of features end to end, from architecture and
+          development to deployment. I also spend time on data structures and
+          algorithms to sharpen my problem-solving, because I like
+          understanding why something works, not just that it does.
         </p>
 
-        <div className="mt-8 border-t border-border pt-6">
+        <div className="mt-8 border-t border-border pt-6 ">
           <p className="text-lg text-text">
             I believe in shipping things that actually work.
           </p>

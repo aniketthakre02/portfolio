@@ -5,7 +5,6 @@ function Hero() {
             id="home"
             className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-24 text-center"
         >
-            {/* Horizon glow — the atmospheric gradient from the reference design */}
             <div
                 className="pointer-events-none absolute inset-0"
                 style={{
@@ -13,7 +12,6 @@ function Hero() {
                         'radial-gradient(ellipse 80% 50% at 50% 100%, rgba(139,128,245,0.16), transparent 60%), radial-gradient(ellipse 60% 40% at 20% 0%, rgba(139,128,245,0.08), transparent 60%)',
                 }}
             />
-            {/* Horizon arc — giant ellipse, mostly hidden below the section, only its top curve visible */}
             <div
                 className="pointer-events-none absolute left-1/2 h-[500px] w-[160%] -translate-x-1/2 rounded-[50%]"
                 style={{
@@ -24,13 +22,12 @@ function Hero() {
                 }}
             />
 
-            {/* Availability badge */}
+           
             <div className="group relative mb-10 flex items-center gap-2 overflow-hidden rounded-full border border-green/40 bg-white/[0.03] px-4 py-1.5 text-xs tracking-wide text-green transition-all duration-300 hover:border-green hover:bg-green/10 hover:shadow-[inset_0_0_16px_rgba(52,211,153,0.45)]">
                 <span className="h-1.5 w-1.5 rounded-full bg-green shadow-[0_0_6px_2px_rgba(52,211,153,0.6)]" />
                 Open to new opportunities
             </div>
 
-            {/* Headline */}
             <h1 className="relative max-w-4xl text-5xl font-medium leading-[1.08] tracking-tight md:text-7xl">
                 I turn complex requirements into{' '}
                 <span className="font-accent text-6xl italic md:text-8xl">
@@ -38,8 +35,6 @@ function Hero() {
                 </span>
             </h1>
 
-            {/* Sub-line */}
-            {/* Sub-line */}
             <div className="relative mt-10 flex items-center gap-3 text-lg text-text-dim">
                 <span>Hello, I'm Aniket Thakre</span>
                 <img
