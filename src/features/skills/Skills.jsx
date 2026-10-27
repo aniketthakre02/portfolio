@@ -24,7 +24,7 @@ function Skills() {
                 return (
                   <div
                     key={skill.name}
-                    className="group flex items-center gap-4 rounded-2xl border border-border bg-card p-5 transition-all duration-200 hover:-translate-y-1 hover:border-accent-dim"
+                    className="group flex items-center gap-4 rounded-2xl border border-border bg-card p-3 transition-all duration-200 hover:-translate-y-1 hover:border-accent-dim"
                   >
                     <div
                       className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg"
