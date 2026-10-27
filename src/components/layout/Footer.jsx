@@ -1,14 +1,29 @@
+const EMAIL = 'aniketthakre2005@gmail.com'
+const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${encodeURIComponent('Hello Aniket')}`
+
+
+const openComposeWindow = (e) => {
+  e.preventDefault()
+  window.open(
+    GMAIL_COMPOSE_URL,
+    'gmail-compose',
+    'width=700,height=700,noopener,noreferrer'
+  )
+}
+
 const GENERAL_LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Work', href: '#work' },
+  { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
+  { label: 'Certificates', href: '#certificates' },
 ]
 
 const CONNECT_LINKS = [
   { label: 'GitHub', href: 'https://github.com/aniketthakre02' },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/aniket-thakre21/' }, 
-  { label: 'Email', href: 'mailto:aniketthakre2005@gmail.com' },
+  { label: 'Email', href: GMAIL_COMPOSE_URL },
   { label: 'LeetCode', href: 'https://leetcode.com/u/aniketthakre2005' }
 ]
 
@@ -16,7 +31,8 @@ function Footer() {
   return (
     <footer id="contact" className="mx-auto max-w-4xl px-6 py-24 text-center">
       <a
-        href="mailto:aniket.email@gmail.com"
+        href={GMAIL_COMPOSE_URL}
+        onClick={openComposeWindow}
         className="mb-16 inline-flex items-center gap-3 rounded-full bg-text py-3 pl-8 pr-3 text-lg font-medium text-bg transition hover:bg-white/90"
       >
         Get In Touch

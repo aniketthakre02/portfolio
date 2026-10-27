@@ -3,8 +3,8 @@ import { experience } from '../../data/experience'
 function Experience() {
     return (
         <section id="work" className="mx-auto max-w-5xl px-6 py-24">
-            <p className="mb-6 flex items-center gap-3 text-xs tracking-[0.2em] text-text-mute uppercase">
-                June 2023 — Present
+            <p className="mb-6 flex items-center gap-3 text-xs tracking-[0.2em]  uppercase">
+                2+ years of
                 <span className="h-px flex-1 bg-border" />
             </p>
             <h2 className="mb-16 text-4xl font-medium md:text-5xl">

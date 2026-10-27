@@ -7,9 +7,9 @@ export const experience = [
     duration: 'June 2023 — Present',
     current: true,
     points: [
-      'Build and maintain the Accounts module of Genisys, an enterprise insurance policy configurator used across client implementations.',
-      'Work across the stack on configuration-driven business logic, translating insurance domain rules into maintainable code.',
-      'Collaborate with cross-functional teams to debug and ship changes in a large, long-lived enterprise codebase.',
+      'Designed and maintained Java/Spring Boot microservices for the Accounts module of an enterprise insurance platform, covering premium transactions, refunds, commissions, and reconciliation.',
+      'Built RESTful APIs with robust validation and error handling, and integrated React/TypeScript microfrontend components with clean, reusable patterns.',
+      'Wrote JUnit tests, ran Postman API regression checks, and contributed to code reviews and change request analysis in an Agile team.',
     ],
   },
   {
@@ -20,8 +20,8 @@ export const experience = [
     duration: 'March 2023 — june 2023',
     current: false,
     points: [
-      'Contributed to NEST, an internal HR and employee management system, building forms and UI pages.',
-      'Integrated frontend pages with backend APIs, handling real request/response cycles for the first time in a team setting.',
+      'Built HR module frontend for NEST, an internal employee management system, developing forms, data tables, and dashboard pages consuming Spring Boot REST APIs.',
+      'Managed API calls, JSON parsing, component state, and data rendering across multiple HR workflows using React.js.',
     ],
   },
 ]

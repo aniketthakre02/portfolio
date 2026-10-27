@@ -4,11 +4,12 @@ export const featuredProjects = [
     title: 'Healthcare Service Management System',
     type: 'Web App',
     year: '2026',
-    description:
-      'A full-stack platform for patients, doctors and admins — role-based access, appointment booking, and a production deployment spread across three separate providers.',
+     description:
+      'A healthcare platform where users can register as patients, browse doctors, and book appointments online, with separate role-based experiences for doctors and admins.',
     points: [
-      'Built JWT-based authentication with role-based access control across patient, doctor and admin roles, using a custom AuthContext with a loading guard to prevent auth-state race conditions.',
-      'Migrated the backend from a decommissioned Railway instance to a Docker + Render stack with a fresh Aiven MySQL database, debugging platform-specific issues along the way (Hibernate constraint mismatches, stale environment variables, CORS).',
+      'Implemented secure JWT-based authentication with Spring Security and role-based access control, so patients, doctors and admins each only reach what they are allowed to.',
+      'Owned the project end to end: REST APIs and MySQL data model with Hibernate/JPA, the React frontend, and admin tools for managing users, roles and doctors.',
+      'Containerised the backend with Docker and deployed it across Render, Aiven MySQL and Vercel, handling CORS and production environment configuration.',
     ],
     links: {
       live: 'https://healthcare-services-frontend.vercel.app',
