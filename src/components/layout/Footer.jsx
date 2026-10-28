@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+
 const EMAIL = 'aniketthakre2005@gmail.com'
 const GMAIL_COMPOSE_URL = `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${encodeURIComponent('Hello Aniket')}`
 
@@ -11,6 +13,29 @@ const openComposeWindow = (e) => {
   )
 }
 
+
+
+const YEAR = new Date().getFullYear()
+
+const getIndiaTime = () =>
+  new Date().toLocaleTimeString('en-IN', {
+    timeZone: 'Asia/Kolkata',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: true,
+  })
+
+function LocalTime() {
+  const [time, setTime] = useState(getIndiaTime)
+
+  useEffect(() => {
+    const id = setInterval(() => setTime(getIndiaTime()), 30000)
+    return () => clearInterval(id)
+  }, [])
+
+  return <span>Thane, India · {time} IST</span>
+}
+
 const GENERAL_LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
@@ -22,7 +47,7 @@ const GENERAL_LINKS = [
 
 const CONNECT_LINKS = [
   { label: 'GitHub', href: 'https://github.com/aniketthakre02' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/aniket-thakre21/' }, 
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/aniket-thakre21/' },
   { label: 'Email', href: GMAIL_COMPOSE_URL },
   { label: 'LeetCode', href: 'https://leetcode.com/u/aniketthakre2005' }
 ]
@@ -100,9 +125,9 @@ function Footer() {
         </div>
       </div>
 
-      <div className="mt-16 flex flex-col justify-between gap-4 border-t border-border pt-8 text-xs uppercase tracking-wide text-text-mute md:flex-row">
-        <span>© 2026 Aniket Thakre. Built with care.</span>
-        <span>Thane, India · GMT +5:30</span>
+      <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-xs uppercase tracking-wide text-text-mute md:flex-row">
+        <span>© {YEAR} Aniket Thakre. Built with React and Tailwind.</span>
+       <LocalTime />
       </div>
     </footer>
   )
