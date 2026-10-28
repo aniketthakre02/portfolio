@@ -1,5 +1,5 @@
 import { featuredProjects, moreProjects } from '../../data/projects'
-import HealthCareDashboard from '../../assets/projects/HealthCareDashboard.png'
+import HealthCareDashboard from '../../assets/projects/healthCareDashboard.png'
 
 function Projects() {
   return (
